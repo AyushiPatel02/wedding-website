@@ -1,4 +1,4 @@
-# 🎉 Indian Wedding Website - Arjun & Priya
+# 🎉 Indian Wedding Website - Prachi & Hardeep
 
 A modern, responsive, and industry-ready Indian wedding website built with HTML, CSS, JavaScript, and Bootstrap. This single-page application showcases all the essential elements of a professional wedding website with beautiful Indian wedding themes and interactive features.
 

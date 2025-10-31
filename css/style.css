@@ -1036,3 +1036,13 @@ p {
     .invite-names { font-size: 1.6rem; }
     .invite-heading { font-size: 1.1rem; }
 }
+
+.venue-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.venue-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

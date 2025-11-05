@@ -6,13 +6,7 @@
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Preloader
-    const preloader = document.getElementById('preloader');
-    window.addEventListener('load', function() {
-        if (preloader) {
-            preloader.style.display = 'none';
-        }
-    });
+
 
     // Initialize AOS (Animate On Scroll)
     AOS.init({
@@ -653,9 +647,9 @@ if ('IntersectionObserver' in window) {
 
 // Console welcome message
 console.log(`
-🎉 Welcome to Arjun & Priya's Wedding Website! 🎉
+🎉 Welcome to Prachi & Hardeep's Wedding Website! 🎉
 Built with love using HTML, CSS, JavaScript & Bootstrap
-Made by: Wedding Web Developer
+Made by:Aman Ktyr Wedding Web Developer
 `);
 
 // Preload critical images

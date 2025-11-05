@@ -24,6 +24,13 @@
             z-index: 1000;
         }
 
+        @media (max-width: 575px) {
+            .sticky-music-button {
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
         .scrolling-wrapper {
             overflow-x: auto;
             overflow-y: hidden;
@@ -67,9 +74,7 @@
     <meta name="google-site-verification" content="wTp31_SXO6lHLWYKT8EMY4GdOHQ4Wb-OqJmwB72h2vc" />
 </head>
 <body>
-    <div id="preloader">
-        <div class="spinner"></div>
-    </div>
+
     <audio id="bgMusic" loop>
         <source src="BGMusic.mp3" type="audio/mpeg">
     </audio>
@@ -118,9 +123,9 @@
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8">
                         <div class="hero-content" data-aos="fade-up">
-                            <p class="hero-date">November 24, 2025</p>
+                            <p class="hero-date">We are getting married on November 24, 2025</p>
                             <h1 class="hero-title">Prachi <span class="ampersand">&</span> Hardeep</h1>
-                            <p class="hero-subtitle">We're Getting Married!</p>
+                            <p class="hero-subtitle">Join us in celebrating our love</p>
                             <div class="countdown-container mt-4">
                                 <div id="countdown" class="countdown">
                                     <div class="countdown-item">
@@ -165,9 +170,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">Our Love Story</h2>
+                    <h2 class="section-title" data-aos="fade-up">Our Story</h2>
                     <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                        Two hearts, one beautiful journey
+                        A new chapter begins
                     </p>
                 </div>
             </div>
@@ -175,25 +180,25 @@
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-right">
                     <div class="timeline-content">
-                        <div class="timeline-date">2025</div>
-                        <h4>First Meeting</h4>
-                        <p>We met at a mutual friend's Diwali celebration. What started as a casual conversation over samosas turned into hours of laughter and connection.</p>
+                        <div class="timeline-date">2024</div>
+                        <h4>Jab We Met</h4>
+                        <p>It all started with a leap of faith. Our families, the architects of our union, introduced us, hoping to weave two lives into one. From our first conversation, a spark of connection was ignited, promising a future of shared dreams and laughter.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item" data-aos="fade-left">
                     <div class="timeline-content">
                         <div class="timeline-date">2025</div>
-                        <h4> Engagement </h4>
-                        <p>Our first official date was at a classical music concert. We discovered our shared love for Indian classical music and culture.</p>
+                        <h4>The "Yes" Moment</h4>
+                        <p>As we spent more time together, our bond grew stronger. We discovered a shared love for family, tradition, and a good cup of chai. It wasn't long before we both realized that this arranged meeting had blossomed into a love we wanted to cherish for a lifetime. With the blessings of our elders, we said "yes" to forever.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item" data-aos="fade-right">
                     <div class="timeline-content">
                         <div class="timeline-date">2025</div>
-                        <h4>The Proposal</h4>
-                        <p>During a romantic sunset at Marina Beach, Chennai, Arjun got down on one knee with a beautiful ring inspired by traditional Indian jewelry.</p>
+                        <h4>The Engagement</h4>
+                        <p>Surrounded by our loved ones, we exchanged rings, sealing our promise of a shared future. The joy and excitement of our families made the day even more special, marking the official beginning of our journey together.</p>
                     </div>
                 </div>
                 
@@ -201,7 +206,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2025</div>
                         <h4>Our Wedding</h4>
-                        <p>Today we begin our new chapter together, surrounded by family, friends, and all the traditions that make our culture beautiful.</p>
+                        <p>Today, we stand on the threshold of a new life, ready to embrace all that the future holds. We are grateful for the love and support of our families and friends as we take our vows and begin our happily ever after.</p>
                     </div>
                 </div>
             </div>
@@ -258,7 +263,7 @@
                             
                         </div>
                         <h4>Wedding Ceremony</h4>
-                        <p class="event-date">Novemxber 24, 2025</p>
+                        <p class="event-date">November 24, 2025</p>
                         <p class="event-time">1:30 PM - 4:00 PM</p>
                         <p class="event-location"><a href="https://maps.app.goo.gl/QU21fGeMsZ3qtPYb7" target="_blank" class="location-link">Gauri Guest House, Kannauj</a></p>
                         <p>The main wedding ceremony with traditional rituals, sacred vows, and the sacred fire as our witness.</p>
@@ -547,20 +552,55 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-4">
-        <div class="container text-center">
+    <footer class="footer py-5">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h5 class="footer-title">Prachi & Hardeep</h5>
-                    <p class="footer-subtitle">November 24, 2025</p>
-                    <p class="footer-text"><i class="fas fa-map-marker-alt"></i>Kannauj, Uttar Pradesh, India</p>
-                    <div class="social-links">
-                        <!-- <a href="#" class="social-link"><i class="fab fa-instagram"></i></a> -->
-                        <!-- <a href="#" class="social-link"><i class="fab fa-facebook"></i></a> -->
-                        <a href="https://wa.me/919838860108?text=Hello%20Gaust,%20I%20would%20like%20to%20RSVP%20for%20your%20wedding." class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title text-uppercase">Prachi & Hardeep</h5>
+                    <p class="footer-text">
+                        Join us as we begin our new journey. Your presence is the greatest gift.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://wa.me/919838860108?text=Hello%20Prachi%20%26%20Hardeep%2C%20I%20would%20like%20to%20RSVP%20for%20your%20wedding.%20Looking%20forward%20to%20celebrating%20with%20you!" class="social-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#our-story">Our Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#rsvp">RSVP</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Kannauj, Uttar Pradesh</li>
+                        <li><i class="fas fa-phone"></i> +91 9838860108</li>
+                        <li><i class="fas fa-phone"></i> +91 6387343245</li>
+                        <!-- <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Call to Action Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title text-uppercase">Get in Touch</h5>
+                    <p>Have questions? Feel free to call us.</p>
+                    <a href="tel:+919838860108" class="btn btn-outline-light btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
                     <p class="copyright">
-                        &copy; 2025 Prachi & Hardeep Wedding. Made with <i class="fas fa-heart text-danger"></i> By <a href="https://www.helyonex.com" target="_blank">Helyonex</a>
+                        &copy; 2025 Prachi & Hardeep Wedding. Made with <i class="fas fa-heart text-danger"></i> by <a href="https://www.helyonex.com" target="_blank">Helyonex</a>.
                     </p>
                 </div>
             </div>

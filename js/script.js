@@ -248,28 +248,40 @@ function initRSVPForm() {
         submitBtn.disabled = true;
         
         // Simulate form submission (replace with actual API call)
-        setTimeout(() => {
-            console.log('RSVP Data:', rsvpData);
-            
-            // Show success message
-            showNotification(
-                rsvpData.attendance === 'yes' 
-                    ? 'Thank you for your RSVP! We can\'t wait to celebrate with you! 🎉'
-                    : 'Thank you for letting us know. We\'ll miss you! 💝',
-                'success'
-            );
-            
-            // Reset form
-            rsvpForm.reset();
-            
-            // Reset button
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-            
-            // Store RSVP data (for demo purposes)
-            storeRSVPData(rsvpData);
-            
-        }, 2000);
+        // WhatsApp redirection
+        const phoneNumber = '916387343245';
+        const message = `
+            *New RSVP Submission*
+
+            *Name:* ${rsvpData.firstName} ${rsvpData.lastName}
+            *Email:* ${rsvpData.email}
+            *Phone:* ${rsvpData.phone || 'N/A'}
+            *Attendance:* ${rsvpData.attendance === 'yes' ? 'Yes, attending' : 'Not attending'}
+            *Guests:* ${rsvpData.guests}
+            *Events:* ${rsvpData.events.join(', ') || 'N/A'}
+            *Dietary Needs:* ${rsvpData.dietary}
+            *Message:* ${rsvpData.message || 'No message'}
+        `;
+
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Show success message
+        showNotification(
+            rsvpData.attendance === 'yes' 
+                ? 'Thank you for your RSVP! We can\'t wait to celebrate with you! 🎉'
+                : 'Thank you for letting us know. We\'ll miss you! 💝',
+            'success'
+        );
+        
+        // Reset form
+        rsvpForm.reset();
+        
+        // Reset button
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
     });
     
     // Show/hide guest count and events based on attendance
@@ -368,25 +380,7 @@ function showNotification(message, type = 'info') {
     });
 }
 
-/**
- * Store RSVP Data (Demo Function)
- */
-function storeRSVPData(data) {
-    // In a real application, this would send data to a server
-    // For now, we'll store it in localStorage for demonstration
-    
-    let rsvpList = JSON.parse(localStorage.getItem('wedding-rsvps')) || [];
-    rsvpList.push({
-        ...data,
-        timestamp: new Date().toISOString(),
-        id: Date.now().toString()
-    });
-    
-    localStorage.setItem('wedding-rsvps', JSON.stringify(rsvpList));
-    
-    console.log('RSVP stored locally:', data);
-    console.log('Total RSVPs:', rsvpList.length);
-}
+
 
 /**
  * Particle Animation (Optional Enhancement)

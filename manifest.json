@@ -1,0 +1,14 @@
+{
+  "name": "Wedding Website",
+  "short_name": "Wedding",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "Our wedding website.",
+  "icons": [{
+    "src": "header-bg.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

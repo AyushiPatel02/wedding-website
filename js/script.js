@@ -6,6 +6,14 @@
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Preloader
+    const preloader = document.getElementById('preloader');
+    window.addEventListener('load', function() {
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    });
+
     // Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 1000,
